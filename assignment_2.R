@@ -14,7 +14,7 @@
 # not sure how the "x = numeric()" part works in the argument list of the 
 # function, but it seems to be creating a variable "x" that is not reachable 
 # from the global environment, but is available in the environment of the 
-# makeCacheMatrix function
+# make_cache_matrix function
 make_cache_matrix <- function(x = numeric()) {
   
   # holds the cached value or NULL if nothing is cached
@@ -49,7 +49,7 @@ make_cache_matrix <- function(x = numeric()) {
 
 
 # The following function calculates the inverse of a "special" matrix created with 
-# makeCacheMatrix
+# make_cache_matrix
 cache_solve <- function(y, ...) {
   # get the cached value
   inverse <- y$get_inverse()
